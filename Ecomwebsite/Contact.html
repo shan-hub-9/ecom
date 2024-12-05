@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Contact</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="nombre-sitio">Store <span> Furniture </span></h1>
+    </header>
+    
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Home</a>
+            <a href="Us.html">About Us</a>
+            <a href="Store.html">Store</a>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Contact</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Your Details</legend>
+                
+                <div class="campo">
+                    <label for="nombre">Name: </label>
+                    <input id="nombre" type="text" placeholder="Your Name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Subject:</label>
+                    <input id="asunto" type="text" placeholder="Your Subject" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" placeholder="Your Email">
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Phone:</label>
+                    <input id="tel" type="tel" placeholder="Your Phone">
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Message:</label>
+                    <textarea rows="10" cols="20"></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Country</legend>
+
+                <div class="campo">
+                    <label for="pais">Country</label>
+                    <select id="pais">
+                        <option value="">-- Select --</option>
+                        <option value="MX">Mexico</option>
+                        <option value="PR">Peru</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="ES">Spain</option>
+                        <option value="CL">Chile</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Extra Information</legend>
+                
+                <div class="campo">
+                    <label for="cliente">Customer</label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="proveedor">Supplier</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Category of Interest</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Kitchen">
+                        <option value="Outdoor">
+                        <option value="Bedrooms">
+                        <option value="Office">
+                        <option value="Television">
+                    </datalist>
+                </div>
+
+            </fieldset>
+
+            <input class="btn" type="submit" value="Submit Form">
+        </form>
+        
+    </main>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categories</h3>
+
+                <nav class="footer-menu">
+                    <a href="#">Kitchen</a>
+                    <a href="#">Office</a>
+                    <a href="#">Garden</a>
+                    <a href="#">Garage</a>
+                    <a href="#">Bedrooms</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>About Us</h3>
+                <nav class="footer-menu">
+                    <a href="#">Our History</a>
+                    <a href="#">Mission, Vision, and Values</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>Support</h3>
+                <nav class="footer-menu">
+                    <a href="#">Frequently Asked Questions</a>
+                    <a href="#">Online Help</a>
+                    <a href="#">Trust and Security</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <p class="copyright">All rights reserved, StoreFurniture</p>
+    </footer>
+
+</body>
+
+</html>
